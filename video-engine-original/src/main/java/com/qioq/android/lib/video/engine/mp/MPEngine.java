@@ -21,7 +21,7 @@ public class MPEngine extends AbsVideoEngine {
     private MediaPlayer     mMediaPlayer;
     private MPController    mController;
     private VideoView       mVideoView;
-    private MPEventHandler mMpEventHandler;
+    private MPEventHandler  mMpEventHandler;
 
     public MPEngine(Context context) {
         super(context);

@@ -1,6 +1,5 @@
 package com.qioq.android.lib.video.plugins.entry;
 
-import android.graphics.Color;
 import android.view.ViewGroup;
 import com.qioq.android.artemis.piece.core.PluginContext;
 import com.qioq.android.artemis.piece.core.model.Mode;
@@ -32,15 +31,14 @@ public class ContentPlugin extends VideoPlugin implements OnFullScreenListener{
         }
     }
 
-
     @Override
     public void onBeforeFullScreen(boolean fullScreen) {
-        mVideoView.setBackgroundColor(Color.BLACK);
+
     }
 
     @Override
     public void onModeChanged(Mode mode) {
         super.onModeChanged(mode);
-        mVideoView.setBackgroundColor(Color.TRANSPARENT);
+        getVideoPlayer().setScale(getVideoPlayer().getScale());
     }
 }

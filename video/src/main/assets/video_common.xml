@@ -23,7 +23,6 @@
             plugin.id="@+id/video_tool_bar"
             />
 
-
     <plugin plugin.class="com.qioq.android.lib.video.plugins.entry.ControllerPlugin"
             plugin.id="@+id/video_controller"
             plugin.layout="@layout/video_controller"

@@ -16,11 +16,6 @@ android {
         renderscriptSupportModeEnabled true
     }
 
-//    retrolambda {
-//        jdk System.getenv("JAVA8_HOME")
-//        javaVersion JavaVersion.VERSION_1_7
-//    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7

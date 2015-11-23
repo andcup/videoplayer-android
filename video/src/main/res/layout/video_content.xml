@@ -7,11 +7,11 @@
                     android:layout_height="match_parent"
                     android:id="@+id/fr_parent_view"
                     android:layout_gravity="center"
-                    android:background="@android:color/black">
+                    android:background="@android:color/darker_gray">
 
         <com.qioq.android.lib.video.engine.widget.VideoView
-                android:layout_width="1dp"
-                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/vv_video"
                 />
 

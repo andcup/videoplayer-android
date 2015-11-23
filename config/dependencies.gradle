@@ -21,13 +21,7 @@ allprojects {
         androidSupportVersion = "22.2.0"
         androidDesignVersion = "22.2.0"
 
-        //Libraries
-        daggerVersion = '2.0'
         butterKnifeVersion = '6.0.0'
-        rxJavaVersion = '1.0.3'
-        rxAndroidVersion = '0.24.0'
-        javaxAnnotationVersion = '10.0-b28'
-        superToastsVersion = "1.3.4"
         retrofitVersion = "1.9.0"
         okHttpVersion = "2.4.0"
         analysisVersion = "2.2.0-rc1"
@@ -45,12 +39,6 @@ allprojects {
         espressoVersion = '2.0'
         testingSupportLibVersion = '0.1'
 
-        //Hermes
-        hermesLibVersion = '2.0.5'
-        activeVersion = '3.0.2'
-        rxVersion = '0.1-SNAPSHOT'
-        extRxVersion = '2.0.5-SNAPSHOT'
-
         videoVersion     = '1.0.5-SNAPSHOT'
         frescoVersion    = "0.5.0"
         blurVersion      = "1.0.0"
@@ -58,8 +46,6 @@ allprojects {
 
         // 为了兼容maven项目依赖本组件，在aar库后面添加@aar保证maven项目使用组件时能取到对应依赖库
         libs = [
-                daggerCompiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
-                dagger             : "com.google.dagger:dagger:${daggerVersion}",
                 butterKnife        : "com.jakewharton:butterknife:${butterKnifeVersion}",
                 supportV4          : "com.android.support:support-v4:${androidSupportVersion}@aar",
                 appCompat          : "com.android.support:appcompat-v7:${androidSupportVersion}@aar",
@@ -67,10 +53,6 @@ allprojects {
                 cardView           : "com.android.support:cardview-v7:${androidSupportVersion}@aar",
                 supportDesign      : "com.android.support:design:${androidDesignVersion}@aar",
                 supportAnnotation  : "com.android.support:support-annotations:${androidSupportVersion}",
-                rxJava             : "io.reactivex:rxjava:${rxJavaVersion}",
-                rxAndroid          : "io.reactivex:rxandroid:${rxAndroidVersion}",
-                javaxAnnotation    : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
-                superToasts        : "com.github.johnpersano:supertoasts:${superToastsVersion}@aar",
                 retrofit           : "com.squareup.retrofit:retrofit:${retrofitVersion}",
                 retrofitWithJackson: "com.squareup.retrofit:converter-jackson:${retrofitVersion}",
                 jacksonDatabind    : "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
@@ -92,16 +74,6 @@ allprojects {
                 dexmakerMockito  : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
                 espresso         : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
                 testingSupportLib: "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
-        ]
-
-        hermes = [
-                activeAndroid: "com.nd.hy.android.hermes:active-android:${activeVersion}",
-                util         : "com.nd.hy.android.hermes:commons-util:${hermesLibVersion}",
-                bus          : "com.nd.hy.android.hermes:commons-bus:${hermesLibVersion}",
-                data         : "com.nd.hy.android.hermes:commons-data:${hermesLibVersion}",
-                rx           : "com.nd.hy.android.hermes:hermes-rx:${rxVersion}",
-                compat       : "com.nd.hy.android.hermes:hermes-compat:${rxVersion}@aar",
-                extRx        : "com.nd.hy.android.hermes:hermes-ext-rx:${extRxVersion}",
         ]
     }
 }

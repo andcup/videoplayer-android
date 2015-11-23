@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:background="@android:color/black"
-                android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:id="@+id/fr_video_content"
-            />
+    <FrameLayout
+        android:id="@+id/fr_video_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_blue_grey_800" />
 
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:id="@+id/fr_video_controller"
-            />
+    <FrameLayout
+        android:id="@+id/fr_video_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="@dimen/video_title_bar_height"
-                 android:id="@+id/fr_video_title_bar"
-                 android:layout_alignParentTop="true"
-            />
+    <FrameLayout
+        android:id="@+id/fr_video_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_title_bar_height"
+        android:layout_alignParentTop="true" />
 
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="@dimen/video_ctrl_bar_height"
-                 android:id="@+id/fr_video_ctrl_bar"
-                 android:layout_alignParentBottom="true"
-            />
+    <FrameLayout
+        android:id="@+id/fr_video_ctrl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_ctrl_bar_height"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
