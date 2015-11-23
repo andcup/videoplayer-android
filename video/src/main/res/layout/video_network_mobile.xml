@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/video_style_network">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="@dimen/video_common_60dp">
+        <TextView android:layout_width  ="match_parent"
+                  android:layout_height ="match_parent"
+                  android:id            ="@+id/tv_title"
+                  android:text          ="@string/network"
+                  style="@style/video_style_network.title"
+                />
+    </LinearLayout>
+
+    <TextView android:id            ="@+id/tv_content"
+              android:layout_width  ="match_parent"
+              android:layout_height ="wrap_content"
+              android:text          ="@string/dlg_not_wifi"
+              style="@style/video_style_network.content"
+            />
+
+    <View android:layout_width  ="match_parent"
+          android:layout_height="0.5dp"
+          android:background   ="@color/transparent_white_30"
+          android:layout_below ="@+id/tv_content"/>
+
+    <LinearLayout android:layout_width  ="match_parent"
+                  android:layout_height ="45dp"
+                  android:orientation   ="horizontal"
+                  android:id            ="@+id/ll_bottom"
+                  android:layout_below  ="@+id/tv_content"
+                  android:layout_marginTop="0.5dp">
+
+        <Button android:layout_width    ="match_parent"
+                android:layout_height ="match_parent"
+                android:id            ="@+id/btn_continue_play"
+                android:layout_weight ="1"
+                android:background    ="@drawable/video_network_selector"
+                android:text          ="@string/dlg_continue_play"
+                android:gravity       ="center"
+                android:textSize      ="@dimen/h3"
+                android:textColor     ="@color/orange"
+                />
+
+        <View android:layout_width ="0.5dp"
+              android:layout_height="match_parent"
+              android:background   ="@color/gray_a0989898"/>
+
+        <Button android:layout_width  ="match_parent"
+                android:layout_height ="match_parent"
+                android:id            ="@+id/btn_cancel_play"
+                android:layout_weight ="1"
+                android:textColor     ="@drawable/video_font_selector"
+                android:background    ="@drawable/video_network_selector"
+                android:text          ="@string/dlg_cancel"
+                android:gravity       ="center"
+                android:textSize      ="@dimen/h3"
+                />
+    </LinearLayout>
+</LinearLayout>

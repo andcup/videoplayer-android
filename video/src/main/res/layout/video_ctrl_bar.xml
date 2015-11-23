@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:clickable="true">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/video_mini_ctrl_bar_height"
+                    android:id="@+id/re_ctrl"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/video_common_background">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl_seek_bar"
+                        android:layout_marginRight="@dimen/seek_bar_margin_right"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_ctrl"
+                        android:layout_toLeftOf="@+id/rl_full_screen">
+
+            <SeekBar
+                    android:id="@+id/sb_video"
+                    style="@style/video_style_ctrl_bar"
+                    />
+
+            <FrameLayout
+                    android:layout_alignTop="@+id/sb_video"
+                    android:layout_alignBottom="@+id/sb_video"
+                    android:layout_alignLeft="@+id/sb_video"
+                    android:layout_alignRight="@+id/sb_video"
+                    style="@style/video_style_tool_bar.exercise"
+                    android:id="@+id/fr_video_exercise"
+                    />
+
+        </RelativeLayout>
+
+        <ImageButton
+                style="@style/video_style_ctrl_bar.ctrl"
+                android:id="@+id/btn_ctrl"
+                />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/tv_time"
+                  android:text="00:00 / 00:00"
+                  android:layout_toRightOf="@+id/btn_ctrl"
+                  android:textSize="@dimen/h7"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/video_common_3dp"
+                  android:layout_toLeftOf="@+id/rl_full_screen"
+                />
+
+        <RelativeLayout android:layout_width="@dimen/video_mini_ctrl_bar_height"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:id="@+id/rl_full_screen"
+                      android:orientation="horizontal">
+
+            <FrameLayout android:id="@+id/fr_video_full_screen"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginLeft="@dimen/video_common_3dp"
+                         android:layout_marginRight="@dimen/video_common_3dp"
+                    />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

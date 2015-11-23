@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height       ="match_parent"
+                    android:layout_marginLeft   ="@dimen/video_common_15dp"
+                    android:layout_marginRight  ="@dimen/video_common_15dp"
+                    android:background="@drawable/video_overlay_background"
+            >
+
+        <TextView style="@style/video_style_overlay"
+                  android:id="@+id/tv_record"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/video_common_15dp"
+                  android:paddingRight="@dimen/video_common_15dp"
+                  android:drawableLeft="@drawable/video_alert"
+                  android:drawablePadding="@dimen/video_common_15dp"
+                  android:layout_toLeftOf="@+id/btn_close"
+                />
+
+        <ImageButton android:layout_width="@dimen/video_common_50dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/video_close_selector"
+                     android:layout_gravity="center_vertical"
+                     android:layout_alignParentRight="true"
+                     android:background="@null"
+                     android:id="@+id/btn_close"
+                />
+    </RelativeLayout>
+
+
+</RelativeLayout>

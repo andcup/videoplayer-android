@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+        android:oneshot="false">
+    <item android:drawable="@drawable/online_loading_frame__icon1" android:duration="15"/>
+    <item android:drawable="@drawable/online_loading_frame__icon2" android:duration="25"/>
+    <item android:drawable="@drawable/online_loading_frame__icon3" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon4" android:duration="46"/>
+    <item android:drawable="@drawable/online_loading_frame__icon5" android:duration="55"/>
+    <item android:drawable="@drawable/online_loading_frame__icon6" android:duration="45"/>
+    <item android:drawable="@drawable/online_loading_frame__icon7" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon8" android:duration="25"/>
+    <item android:drawable="@drawable/online_loading_frame__icon9" android:duration="15"/>
+    <item android:drawable="@drawable/online_loading_frame__icon10" android:duration="25"/>
+    <item android:drawable="@drawable/online_loading_frame__icon11" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon12" android:duration="45"/>
+    <item android:drawable="@drawable/online_loading_frame__icon13" android:duration="55"/>
+    <item android:drawable="@drawable/online_loading_frame__icon14" android:duration="45"/>
+    <item android:drawable="@drawable/online_loading_frame__icon15" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon16" android:duration="25"/>
+    <item android:drawable="@drawable/online_loading_frame__icon17" android:duration="15"/>
+    <item android:drawable="@drawable/online_loading_frame__icon18" android:duration="25"/>
+    <item android:drawable="@drawable/online_loading_frame__icon19" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon20" android:duration="45"/>
+    <item android:drawable="@drawable/online_loading_frame__icon21" android:duration="55"/>
+    <item android:drawable="@drawable/online_loading_frame__icon22" android:duration="45"/>
+    <item android:drawable="@drawable/online_loading_frame__icon23" android:duration="35"/>
+    <item android:drawable="@drawable/online_loading_frame__icon24" android:duration="25"/>
+</animation-list>

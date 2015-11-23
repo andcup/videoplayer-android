@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+
+        <dialog plugin.id="@+id/video_last_record"
+                plugin.class ="com.qioq.android.lib.video.plugins.VideoLastRecordPlugin"
+                plugin.layout="@layout/video_last_record"
+                plugin.modal ="false"
+                plugin.relativeTo="context"
+                plugin.width ="match_parent"
+                plugin.height="wrap_content"
+                plugin.new   = "size"
+                plugin.gravity="left|top"
+                plugin.enable="false"
+                plugin.top="@dimen/video_common_50dp"
+                />
+
+        <dialog plugin.id="@+id/video_change_quality"
+                plugin.class ="com.qioq.android.lib.video.plugins.ChangeQualityPlugin"
+                plugin.layout="@layout/video_change_quality"
+                plugin.modal ="false"
+                plugin.relativeTo="context"
+                plugin.width ="match_parent"
+                plugin.height="wrap_content"
+                plugin.new   = "size"
+                plugin.gravity="left|top"
+                plugin.top="@dimen/video_common_50dp"
+                />
+
+</plugins>

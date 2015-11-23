@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="15dp"
+              android:background="@drawable/video_volume_brightness_bg">
+
+    <TextView style="@style/video_style_volume_brightness"
+              android:drawableBottom="@drawable/video_brightness"
+              android:text="@string/brightness"
+              android:id="@+id/tv_brightness"
+              android:layout_above="@+id/rl_brightness"
+            />
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_brightness"
+                    android:layout_alignParentBottom="true"
+                    android:padding="2dp"
+                    android:background="@drawable/video_volume_brightness_seekbar_selector"
+                    android:layout_margin="10dp">
+
+        <SeekBar style="@style/video_style_volume_brightness.seek_bar"
+                 android:id="@+id/sb_brightness"
+                 android:max="255"
+                />
+    </RelativeLayout>
+
+</RelativeLayout>

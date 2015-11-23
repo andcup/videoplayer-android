@@ -1,0 +1,14 @@
+
+apply plugin: 'com.android.library'
+apply from: '../config/android.gradle'
+
+group   = "com.qioq.android.lib.video.engine.mp"
+version = parent.version
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':video-engine')
+}
+
+apply from: '../config/upload.gradle'
+

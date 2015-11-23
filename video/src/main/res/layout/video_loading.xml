@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:background="@drawable/video_overlay_background"
+              android:padding="@dimen/video_common_10dp"
+              android:gravity="center">
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/iv_loading"
+               android:src="@anim/video_loading"
+               android:layout_centerInParent="true"
+            />
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/video_common_10dp"
+                  android:gravity="center"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:orientation="vertical">
+
+        <TextView   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_loading"
+                    android:text="@string/video_loading"
+                    style="@style/video_style_font_3d.h5"
+                    android:gravity="center"/>
+
+        <TextView   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_guide"
+                    android:text="@string/user_guide_play"
+                    style="@style/video_style_font_3d.h6"
+                    android:layout_marginTop="@dimen/video_common_5dp"
+                    android:gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>

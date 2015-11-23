@@ -1,0 +1,14 @@
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "${parent.ext.deployUrl}") {
+                authentication(userName: "${parent.ext.nexusUsername}", password: "${parent.ext.nexusPassword}")
+            }
+            pom.version = "${version}"
+            pom.groupId = "${this.group}"
+            pom.artifactId = "${this.name}"
+        }
+    }
+}

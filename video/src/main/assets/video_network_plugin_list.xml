@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+
+        <dialog plugin.id="@+id/video_network_mobile"
+                plugin.class ="com.qioq.android.lib.video.plugins.network.VideoNetworkMobilePlugin"
+                plugin.layout="@layout/video_network_mobile"
+                plugin.modal ="true"
+                plugin.relativeTo="window"
+                plugin.width ="wrap_content"
+                plugin.height="190dp"
+                plugin.new   = "size"
+                plugin.gravity="center"
+                plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+                />
+
+        <dialog plugin.id="@+id/video_network_notconnect"
+                plugin.class ="com.qioq.android.lib.video.plugins.network.VideoNetworkNotConnectPlugin"
+                plugin.layout="@layout/video_network_notconnect"
+                plugin.modal ="true"
+                plugin.relativeTo="window"
+                plugin.width ="wrap_content"
+                plugin.height="150dp"
+                plugin.new   = "size"
+                plugin.gravity="center"
+                plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+                plugin.autoStart="true"
+                />
+
+</plugins>

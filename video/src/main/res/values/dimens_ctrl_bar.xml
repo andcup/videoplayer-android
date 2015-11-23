@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="video_title_bar_height">44dp</dimen>
+    <dimen name="video_ctrl_bar_height">69dp</dimen>
+    <dimen name="video_mini_ctrl_bar_height">50dp</dimen>
+
+    <dimen name="seek_bar_margin_left">10dp</dimen>
+    <dimen name="seek_bar_margin_right">8dp</dimen>
+    <dimen name="btn_play_margin_left">13dp</dimen>
+    <dimen name="ctrl_bar_padding_right">15dp</dimen>
+    <dimen name="tv_time_margin_left">23dp</dimen>
+
+</resources>

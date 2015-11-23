@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="video_style_ctrl_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:max">1000</item>
+        <item name="android:thumbOffset">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:progressDrawable">@drawable/video_seek_bar_selector</item>
+        <item name="android:thumb">@drawable/video_thumb_selector</item>
+    </style>
+
+    <style name="video_style_ctrl_bar.ctrl">
+        <item name="android:src">@drawable/video_play_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="video_style_ctrl_bar.title">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="video_style_tool_bar">
+        <item name="android:textSize">@dimen/h6</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingRight">@dimen/video_common_12dp</item>
+        <item name="android:paddingLeft">@dimen/video_common_12dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">@drawable/video_font_selector</item>
+    </style>
+
+    <style name="video_style_tool_bar.note" parent="video_style_tool_bar">
+        <item name="android:drawableTop">@drawable/video_note_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/h7</item>
+    </style>
+
+    <style name="video_style_tool_bar.quiz" parent="video_style_tool_bar">
+        <item name="android:drawableTop">@drawable/video_quiz_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/h7</item>
+    </style>
+
+    <style name="video_style_tool_bar.exercise" parent="video_style_tool_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+</resources>

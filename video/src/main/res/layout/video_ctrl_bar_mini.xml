@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_seek_bar"
+                android:paddingLeft="@dimen/video_common_8dp"
+                android:paddingRight="@dimen/video_common_8dp"
+                android:background="@drawable/video_common_background">
+    <SeekBar
+            android:id="@+id/sb_video"
+            style="@style/video_style_ctrl_bar"
+            android:layout_centerInParent="true"
+            />
+
+    <FrameLayout
+            android:layout_alignTop="@+id/sb_video"
+            android:layout_alignBottom="@+id/sb_video"
+            android:layout_alignLeft="@+id/sb_video"
+            android:layout_alignRight="@+id/sb_video"
+            style="@style/video_style_tool_bar.exercise"
+            android:id="@+id/fr_video_exercise"
+            />
+
+</RelativeLayout>

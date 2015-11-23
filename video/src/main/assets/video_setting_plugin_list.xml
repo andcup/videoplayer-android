@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+        <dialog plugin.id="@+id/video_setting_panel"
+                plugin.class="com.qioq.android.lib.video.plugins.setting.VideoSettingPanelPlugin"
+                plugin.gravity="center"
+                plugin.modal="true"
+                plugin.width="@dimen/setting_width"
+                plugin.height="wrap_content"
+                plugin.layout="@layout/video_setting_panel"
+                >
+                <expand id.expand="@+id/fr_quality"     id.plugin="@+id/video_quality"/>
+                <expand id.expand="@+id/fr_scale"       id.plugin="@+id/video_scale"/>
+                <expand id.expand="@+id/fr_rate"        id.plugin="@+id/video_rate"/>
+                <expand id.expand="@+id/fr_subtitle"    id.plugin="@+id/video_setting_subtitle"/>
+        </dialog>
+
+        <plugin plugin.class="com.qioq.android.lib.video.plugins.setting.VideoQualityPlugin"
+                plugin.id="@+id/video_quality"
+                plugin.layout="@layout/video_setting_common"
+                />
+
+        <plugin plugin.class="com.qioq.android.lib.video.plugins.setting.VideoRatePlugin"
+                plugin.id="@+id/video_rate"
+                plugin.layout="@layout/video_setting_common"
+                />
+
+        <plugin plugin.class="com.qioq.android.lib.video.plugins.setting.VideoScalePlugin"
+                plugin.id="@+id/video_scale"
+                plugin.layout="@layout/video_setting_common"
+                />
+
+        <plugin plugin.class="com.qioq.android.lib.video.plugins.setting.VideoSubtitlePlugin"
+                plugin.id="@+id/video_setting_subtitle"
+                plugin.layout="@layout/video_setting_common"
+                />
+
+</plugins>

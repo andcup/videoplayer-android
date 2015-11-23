@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+    <include plugin.path="video_common.xml" plugin.enable="true"/>
+    <include plugin.path="video_guide_plugin_list.xml"    plugin.enable="true"/>
+    <include plugin.path="video_subtitle_plugin_list.xml"  plugin.enable="true"/>
+    <include plugin.path="video_overlay_plugin_list.xml" plugin.enable="true"/>
+    <include plugin.path="video_setting_plugin_list.xml" plugin.enable="true"/>
+
+    <plugin plugin.id="@+id/video_entry"
+            plugin.class ="com.qioq.android.lib.video.plugins.entry.EntryPlugin"
+            plugin.layout="@layout/video_entry"
+            plugin.entry ="true"
+            >
+        <expand id.expand="@+id/fr_video_content"     id.plugin="@+id/video_content"/>
+        <expand id.expand="@+id/fr_video_controller"  id.plugin="@+id/video_controller"/>
+
+        <expand id.expand="@+id/fr_video_title_bar"   id.plugin="@+id/video_title_bar"/>
+        <expand id.expand="@+id/fr_video_ctrl_bar"    id.plugin="@+id/video_ctrl_bar"/>
+
+    </plugin>
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.bar.CtrlBarPlugin"
+            plugin.id="@+id/video_ctrl_bar"
+            plugin.layout="@layout/video_ctrl_bar"
+            plugin.new="size"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.CtrlBarIndicator"
+            >
+        <expand id.expand="@+id/fr_video_full_screen" id.plugin="@+id/video_full_screen"/>
+        <expand id.expand="@+id/fr_video_setting" id.plugin="@+id/video_settings"/>
+        <expand id.expand="@+id/fr_video_exercise" id.plugin="@+id/video_exercise"/>
+    </plugin>
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.setting.VideoSettingPlugin"
+            plugin.id="@+id/video_settings"
+            plugin.layout="@layout/video_settings"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+            />
+
+</plugins>

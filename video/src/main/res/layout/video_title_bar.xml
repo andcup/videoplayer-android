@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@null">
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/video_close_selector"
+            android:id="@+id/btn_close"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/video_common_15dp"
+            />
+
+    <TextView style="@style/video_style_ctrl_bar.title"
+              android:layout_toRightOf="@+id/btn_close"
+              android:layout_marginRight="@dimen/video_common_15dp"
+              android:id="@+id/tv_title"
+              android:singleLine="true"
+              android:ellipsize="marquee"
+              android:focusableInTouchMode="true"
+              android:focusable="true"
+              android:visibility="gone"
+              android:marqueeRepeatLimit="marquee_forever"
+            />
+
+</RelativeLayout>

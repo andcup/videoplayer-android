@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="15dp"
+              android:background="@drawable/video_overlay_background">
+
+    <TextView style="@style/video_style_seek"
+              android:text="0"
+              android:drawableTop="@drawable/video_seek_selector"
+              android:id="@+id/tv_time"
+            />
+
+</LinearLayout>

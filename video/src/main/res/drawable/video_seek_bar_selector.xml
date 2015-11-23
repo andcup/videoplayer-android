@@ -1,0 +1,44 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                    android:startColor="@color/video_seek_bar_background_startColor"
+                    android:centerColor="@color/video_seek_bar_background_centerColor"
+                    android:centerY="0.75"
+                    android:endColor="@color/video_seek_bar_background_endColor"
+                    android:angle="270"
+                    />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                        android:startColor="@color/video_seek_bar_secondaryProgress_startColor"
+                        android:centerColor="@color/video_seek_bar_secondaryProgress_centerColor"
+                        android:centerY="0.75"
+                        android:endColor="@color/video_seek_bar_secondaryProgress_endColor"
+                        android:angle="270"
+                        />
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                        android:startColor="@color/video_seek_bar_progress_startColor"
+                        android:centerColor="@color/video_seek_bar_progress_centerColor"
+                        android:centerY="0.75"
+                        android:endColor="@color/video_seek_bar_progress_endColor"
+                        android:angle="270"
+                        />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list> 

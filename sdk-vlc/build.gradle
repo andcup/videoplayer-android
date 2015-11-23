@@ -1,0 +1,14 @@
+
+apply plugin: 'com.android.library'
+
+apply from: '../config/android.gradle'
+
+group   = "com.qioq.android.lib.video.sdk.vlc"
+version = parent.version
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+}
+
+apply from: '../config/upload.gradle'

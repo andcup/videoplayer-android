@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="video_style_setting_panel">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="video_style_network">
+        <item name="android:background">@drawable/video_overlay_background</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="video_style_network.title">
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_e9</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="video_style_network.content">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_e9</item>
+        <item name="android:padding">@dimen/video_common_10dp</item>
+    </style>
+
+    <style name="video_style_subtitle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D3D3D3</item>
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:shadowColor">@color/black_171718</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:paddingBottom">@dimen/video_common_20dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="video_style_guide">
+        <item name="android:textSize">@dimen/h4</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

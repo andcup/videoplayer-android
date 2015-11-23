@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.entry.ContentPlugin"
+            plugin.id="@+id/video_content"
+            plugin.layout="@layout/video_content"
+            >
+        <expand id.expand="@+id/fr_video_subtitle" id.plugin="@+id/video_subtitle"/>
+    </plugin>
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.bar.TitleBarPlugin"
+            plugin.id="@+id/video_title_bar"
+            plugin.layout="@layout/video_title_bar"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.TitleBarIndicator"
+            plugin.new="size"
+            >
+        <expand id.expand="@+id/fr_video_note" id.plugin="@+id/video_note"/>
+        <expand id.expand="@+id/fr_video_quiz" id.plugin="@+id/video_quiz"/>
+    </plugin>
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.bar.ToolBarPlugin"
+            plugin.id="@+id/video_tool_bar"
+            />
+
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.entry.ControllerPlugin"
+            plugin.id="@+id/video_controller"
+            plugin.layout="@layout/video_controller"
+            >
+        <expand id.expand="@+id/fr_video_overlay"     id.plugin="@+id/video_loading"/>
+        <expand id.expand="@+id/fr_video_overlay"     id.plugin="@+id/video_ctrl"/>
+    </plugin>
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.loading.VideoLoadingPlugin"
+            plugin.id="@+id/video_loading"
+            plugin.layout="@layout/video_loading"
+            plugin.new="size"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.VideoLoadingIndicator"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.overlay.PlayCtrlPlugin"
+            plugin.id="@+id/video_ctrl"
+            plugin.layout="@layout/video_ctrl"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.VideoErrorStrategyPlugin"
+            plugin.id="@+id/video_error_strategy"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.VideoCheckerPlugin"
+            plugin.id="@+id/video_detector"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.VideoPlayStrategyPlugin"
+            plugin.id="@+id/video_play_strategy"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.FullScreenPlugin"
+            plugin.id="@+id/video_full_screen"
+            plugin.layout="@layout/video_full_screen"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.FullScreenIndicator"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.VideoNotePlugin"
+            plugin.id="@+id/video_note"
+            plugin.layout="@layout/video_note"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+            />
+
+    <plugin plugin.class="com.qioq.android.lib.video.plugins.VideoQuizPlugin"
+            plugin.id="@+id/video_quiz"
+            plugin.layout="@layout/video_quiz"
+            plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+            />
+
+    <dialog plugin.id       = "@+id/video_content_loading"
+            plugin.class    = "com.qioq.android.lib.video.plugins.content.OnContentLoadingPlugin"
+            plugin.layout   = "@layout/video_content_loading"
+            plugin.height   = "match_parent"
+            plugin.width    = "match_parent"
+            plugin.relativeTo ="context"
+            plugin.gravity  = "right|bottom"
+            plugin.modal    = "false"
+            plugin.new="size"
+            plugin.autoStart="true"
+            />
+
+    <dialog plugin.class="com.qioq.android.lib.video.plugins.overlay.seek.MiniCtrlBarPlugin"
+            plugin.id="@+id/video_ctrl_bar_mini"
+            plugin.layout="@layout/video_ctrl_bar_mini"
+            plugin.relativeTo ="context"
+            plugin.gravity  = "bottom"
+            plugin.modal    = "false"
+            plugin.height   = "28dp"
+            plugin.width    = "match_parent"
+            >
+        <expand id.expand="@+id/fr_video_exercise" id.plugin="@+id/video_exercise"/>
+    </dialog>
+
+    <dialog plugin.class="com.qioq.android.lib.video.plugins.overlay.VolumePlugin"
+            plugin.id="@+id/video_volume"
+            plugin.layout="@layout/video_volume"
+            plugin.relativeTo ="context"
+            plugin.gravity  = "center"
+            plugin.modal    = "false"
+            plugin.height   = "140dp"
+            plugin.width    = "140dp"
+            plugin.new="size"
+            />
+
+    <dialog plugin.class="com.qioq.android.lib.video.plugins.overlay.BrightnessPlugin"
+            plugin.id="@+id/video_brightness"
+            plugin.layout="@layout/video_brightness"
+            plugin.relativeTo ="context"
+            plugin.gravity  = "center"
+            plugin.modal    = "false"
+            plugin.height   = "140dp"
+            plugin.width    = "140dp"
+            plugin.new      ="size"
+            />
+
+    <dialog plugin.class="com.qioq.android.lib.video.plugins.overlay.seek.GestureSeekPlugin"
+            plugin.id="@+id/video_seek"
+            plugin.layout="@layout/video_seek"
+            plugin.relativeTo ="context"
+            plugin.gravity  = "center"
+            plugin.modal    = "false"
+            plugin.height   = "90dp"
+            plugin.width    = "200dp"
+            plugin.new      = "size"
+            />
+
+</plugins>

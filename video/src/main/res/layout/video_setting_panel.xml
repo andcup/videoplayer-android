@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation   ="vertical"
+              style="@style/video_style_setting_panel">
+
+    <RelativeLayout android:orientation   ="vertical"
+                    android:layout_width  ="match_parent"
+                    android:layout_height ="47dp"
+                    android:background="@drawable/video_setting_title">
+
+        <TextView android:layout_width  ="wrap_content"
+                  android:layout_height ="match_parent"
+                  android:id            ="@+id/tv_title"
+                  android:text          ="@string/settings"
+                  android:textSize="@dimen/h2"
+                  android:textColor="@color/white"
+                  android:layout_centerInParent="true"
+                  android:layout_marginBottom="2dp"
+                  android:layout_marginLeft="@dimen/video_common_15dp"
+                  android:padding="@dimen/video_common_10dp"
+                  android:gravity="center"
+                />
+
+        <View android:layout_width  ="match_parent"
+              android:layout_height ="0.5dp"
+              android:background    ="@color/transparent_white_10"
+              android:layout_alignParentBottom="true"
+                />
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:id="@+id/btn_close"
+                     android:src="@drawable/video_close_selector"
+                     android:background="@null"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginBottom="2dp"
+                     android:layout_marginRight="@dimen/video_common_15dp"
+                />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/video_setting_content"
+            >
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:id="@+id/fr_quality"
+                />
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:id="@+id/fr_scale"
+                />
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:id="@+id/fr_rate"
+                />
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:id="@+id/fr_subtitle"
+                />
+    </LinearLayout>
+
+
+</LinearLayout>

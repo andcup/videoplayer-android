@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@drawable/video_common_background">
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/video_back_selector"
+            android:id="@+id/btn_close"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/video_common_15dp"
+            />
+
+    <TextView style="@style/video_style_ctrl_bar.title"
+              android:layout_toRightOf="@+id/btn_close"
+              android:id="@+id/tv_title"
+              android:singleLine="true"
+              android:ellipsize="marquee"
+              android:focusableInTouchMode="true"
+              android:focusable="true"
+              android:marqueeRepeatLimit="marquee_forever"
+              android:layout_toLeftOf="@+id/ll_right"
+            />
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/ll_right">
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_toLeftOf="@+id/fr_video_quiz"
+                     android:layout_marginRight="@dimen/video_common_10dp"
+                     android:id="@+id/fr_video_note"/>
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="@dimen/video_common_10dp"
+                     android:id="@+id/fr_video_quiz"/>
+    </LinearLayout>
+
+</RelativeLayout>

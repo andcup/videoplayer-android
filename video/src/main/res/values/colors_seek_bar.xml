@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="video_seek_bar_background_startColor">@color/transparent_30</color>
+    <color name="video_seek_bar_background_centerColor">@color/transparent_30</color>
+    <color name="video_seek_bar_background_endColor">@color/transparent_30</color>
+
+    <color name="video_seek_bar_progress_startColor">@color/orange</color>
+    <color name="video_seek_bar_progress_centerColor">@color/orange</color>
+    <color name="video_seek_bar_progress_endColor">@color/orange</color>
+
+    <color name="video_seek_bar_secondaryProgress_startColor">@color/transparent_white_50</color>
+    <color name="video_seek_bar_secondaryProgress_centerColor">@color/transparent_white_50</color>
+    <color name="video_seek_bar_secondaryProgress_endColor">@color/transparent_white_50</color>
+
+</resources>

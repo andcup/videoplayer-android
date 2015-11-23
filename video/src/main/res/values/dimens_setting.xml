@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="setting_width">400dp</dimen>
+
+    <dimen name="setting_item_title_width">100dp</dimen>
+    <dimen name="setting_item_height">40dp</dimen>
+    <dimen name="setting_item_width">70dp</dimen>
+</resources>

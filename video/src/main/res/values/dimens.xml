@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h0">24sp</dimen>
+    <dimen name="h1">22sp</dimen>
+    <dimen name="h2">20sp</dimen>
+    <dimen name="h3">18sp</dimen>
+    <dimen name="h4">16sp</dimen>
+    <dimen name="h5">14sp</dimen>
+    <dimen name="h6">12sp</dimen>
+    <dimen name="h7">10sp</dimen>
+
+    <dimen name="video_common_1dp">1dp</dimen>
+    <dimen name="video_common_2dp">2dp</dimen>
+    <dimen name="video_common_3dp">3dp</dimen>
+    <dimen name="video_common_4dp">4dp</dimen>
+    <dimen name="video_common_5dp">5dp</dimen>
+    <dimen name="video_common_6dp">6dp</dimen>
+    <dimen name="video_common_7dp">7dp</dimen>
+    <dimen name="video_common_8dp">8dp</dimen>
+    <dimen name="video_common_10dp">10dp</dimen>
+    <dimen name="video_common_11dp">11dp</dimen>
+    <dimen name="video_common_12dp">12dp</dimen>
+    <dimen name="video_common_15dp">15dp</dimen>
+    <dimen name="video_common_20dp">20dp</dimen>
+    <dimen name="video_common_25dp">25dp</dimen>
+    <dimen name="video_common_30dp">30dp</dimen>
+    <dimen name="video_common_40dp">40dp</dimen>
+    <dimen name="video_common_42dp">42dp</dimen>
+    <dimen name="video_common_50dp">50dp</dimen>
+    <dimen name="video_common_60dp">60dp</dimen>
+    <dimen name="video_common_65dp">65dp</dimen>
+    <dimen name="video_common_80dp">80dp</dimen>
+    <dimen name="video_common_100dp">100dp</dimen>
+    <dimen name="video_common_300dp">300dp</dimen>
+</resources>

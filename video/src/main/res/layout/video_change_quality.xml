@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height       ="match_parent"
+                    android:layout_marginLeft   ="@dimen/video_common_15dp"
+                    android:layout_marginRight  ="@dimen/video_common_15dp"
+                    android:background="@drawable/video_overlay_background"
+            >
+
+        <TextView style="@style/video_style_overlay"
+                  android:id="@+id/tv_message"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/video_common_15dp"
+                  android:paddingRight="@dimen/video_common_15dp"
+                  android:drawableLeft="@drawable/video_alert"
+                  android:layout_toLeftOf="@+id/btn_close"
+                  android:drawablePadding="@dimen/video_common_10dp"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:singleLine="true"
+                  android:textColor="@drawable/video_font_selector"
+                  android:text="@string/lower_network_alert"
+                />
+
+        <ImageButton android:layout_width="@dimen/video_common_42dp"
+                     android:layout_height="@dimen/video_common_42dp"
+                     android:src="@drawable/video_close_selector"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:background="@null"
+                     android:id="@+id/btn_close"
+                />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

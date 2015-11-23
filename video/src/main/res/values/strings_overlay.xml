@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume">音量</string>
+    <string name="brightness">亮度</string>
+
+    <string name="video_loading">正在缓冲...%s</string>
+    <string name="user_guide_volume">右侧上下滑动可以调整声音</string>
+    <string name="user_guide_light">左侧上下滑动可以调整亮度</string>
+    <string name="user_guide_play">左右滑动可以调整播放进度</string>
+    <string name="seek_last">您上次观看到 %s ,正在为您跳转...</string>
+    <string name="lower_network_alert">你的网速较慢，点击切换至流畅模式</string>
+</resources>

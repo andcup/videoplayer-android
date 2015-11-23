@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+        <plugin plugin.class="com.qioq.android.lib.video.plugins.subtitle.SubtitlePlugin"
+                plugin.id="@+id/video_subtitle"
+                plugin.layout="@layout/video_subtitle"
+                />
+</plugins>

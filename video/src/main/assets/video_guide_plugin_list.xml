@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugins xmlns="http://www.zcmx.com">
+
+        <dialog plugin.class="com.qioq.android.lib.video.plugins.VideoGuidePlugin"
+                plugin.id="@+id/video_guide"
+                plugin.layout="@layout/video_guide"
+                plugin.gravity="center"
+                plugin.width ="match_parent"
+                plugin.height="match_parent"
+                plugin.relativeTo="window"
+                plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.LargeIndicator"
+                />
+</plugins>
