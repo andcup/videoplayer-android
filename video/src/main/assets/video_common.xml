@@ -15,8 +15,8 @@
             plugin.displayIndicator="com.qioq.android.lib.video.core.indicators.TitleBarIndicator"
             plugin.new="size"
             >
-        <expand id.expand="@+id/fr_video_note" id.plugin="@+id/video_note"/>
-        <expand id.expand="@+id/fr_video_quiz" id.plugin="@+id/video_quiz"/>
+        <expand id.expand="@+id/fr_video_note" id.plugin="@+id/video_note" plugin.enable="false"/>
+        <expand id.expand="@+id/fr_video_quiz" id.plugin="@+id/video_quiz" plugin.enable="false"/>
     </plugin>
 
     <plugin plugin.class="com.qioq.android.lib.video.plugins.bar.ToolBarPlugin"

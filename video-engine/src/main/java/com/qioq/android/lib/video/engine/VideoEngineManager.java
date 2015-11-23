@@ -10,8 +10,8 @@ import java.lang.reflect.Constructor;
 public class VideoEngineManager {
 
     private static final String[] ENGINE_LIST = new String[]{
-        "com.nd.hy.android.video.engine.vlc.VLCEngine",
-        "com.nd.hy.android.video.engine.mp.MPEngine",
+        "com.qioq.android.lib.video.engine.vlc.VLCEngine",
+        "com.qioq.android.lib.video.engine.mp.MPEngine",
     };
 
     public static AbsVideoEngine newEngine(Context context){

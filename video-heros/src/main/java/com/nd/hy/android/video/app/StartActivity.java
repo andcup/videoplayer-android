@@ -89,51 +89,12 @@ public class StartActivity extends FragmentActivity implements View.OnClickListe
                         List<Video> videos = new ArrayList<Video>();
 
                         Video video = new Video();
-                        video.setVideoUrl("http://192.168.249.16/v.854.480.mp4");
+                        video.setVideoUrl("http://192.168.10.4/test.mp4");
                         video.setVideoId("test video");
-                        video.setTitle("http://192.168.249.16/v.854.480.mp4");
+                        video.setTitle("http://192.168.10.4/test.mp4");
                         video.setQuality(Quality.Smooth);
-                        //videos.add(video);
-
-                        video = new Video();
-                        video.setVideoUrl("http://192.168.249.16/v.1280.720.mp4");
-                        video.setVideoId("test video");
-                        video.setTitle("http://192.168.249.16/v.1280.720.mp4");
-                        video.setQuality(Quality.HD);
-                        //videos.add(video);
-//
-                        video = new Video();
-                        video.setVideoUrl("http://192.168.249.16/v.854.480.f4v");
-                        video.setVideoId("test video");
-                        video.setTitle("http://192.168.249.16/v.854.480.f4v");
-                        video.setQuality(Quality.Standard);
                         videos.add(video);
-//
-                        video = new Video();
-                        video.setVideoUrl("http://192.168.249.16/v.392.220.f4v");
-                        video.setVideoId("test video");
-                        video.setTitle("http://192.168.249.16/v.392.220.f4v");
-                        video.setQuality(Quality.Low);
-                        videos.add(video);
-//
-                        SubtitlePlayer.get().open(StartActivity.this, new SubtitleProvider() {
-                            @Override
-                            public void load(OnSubtitleGetterListener onSubtitleLoadingListener) {
-                                List<Subtitle> subtitleList = new ArrayList<Subtitle>();
-
-                                Subtitle subtitle = new Subtitle();
-                                subtitle.setLocalUrl("/storage/sdcard0/test.srt");
-                                subtitle.setTitle("chinese");
-                                subtitleList.add(subtitle);
-
-                                subtitle = new Subtitle();
-                                subtitle.setLocalUrl("/storage/sdcard0/test.srt");
-                                subtitle.setTitle("english");
-                                subtitleList.add(subtitle);
-
-                                onSubtitleLoadingListener.onSubtitleGetFinish(subtitleList);
-                            }
-                        });
+                        onDocLoadingListener.onContentLoadingComplete(videos);
                     }
                 });
             }
@@ -142,7 +103,6 @@ public class StartActivity extends FragmentActivity implements View.OnClickListe
             public void onApplicationStop(VideoPlayer videoPlayer) {
             }
         });
-        mVideoPlayer.setCoverUrl("http://g.hiphotos.baidu.com/image/pic/item/dc54564e9258d109ed03d93ad358ccbf6d814d51.jpg");
         mVideoPlayer.start();
     }
 
