@@ -1,10 +1,10 @@
 allprojects {
     repositories {
         jcenter()
-        maven { url 'http://nexus.qioq.com:8081/nexus/content/groups/public/' }
+        maven { url 'http://git.sayboy.com:8081/nexus/content/groups/public/' }
     }
     ext {
-        deployHost = "http://nexus.qioq.com:8081"
+        deployHost = "http://git.sayboy.com:8081"
         deployReleaseUrl = "${deployHost}/nexus/content/repositories/releases"
         deploySnapshotUrl = "${deployHost}/nexus/content/repositories/snapshots"
         deployLocalRepo = "file:///e:/repo"
