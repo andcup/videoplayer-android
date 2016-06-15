@@ -1,5 +1,6 @@
 # 视频播放器组件版本发布
 
+[<----快速接入文档----->](http://git.sayboy.com/android-libs/android-lib-video/wikis/video-guilde-quick-start)
 
 ## 1.0.5
 
