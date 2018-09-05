@@ -16,7 +16,7 @@
         
         video-heros 是接入工程demo
 
-        video 是核心库(组件式开发)
+        video 是核心库(插件式开发)
         
         video-engine 是视频引擎（支持视频底层引擎切换）
         
