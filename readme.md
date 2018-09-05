@@ -27,9 +27,8 @@
 有缘人想了解的话，可以联系我：QQ：56027652， 备注【视频组件】
 
 
-# 视频播放器组件版本
+# 视频播放器组件版本历史
 
-[<----快速接入文档----->](http://git.sayboy.com/android-libs/android-lib-video/wikis/video-guilde-quick-start)
 
 ## 1.0.5
 
