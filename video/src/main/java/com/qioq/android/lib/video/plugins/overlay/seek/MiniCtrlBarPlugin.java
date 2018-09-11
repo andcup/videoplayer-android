@@ -1,8 +1,8 @@
 package com.qioq.android.lib.video.plugins.overlay.seek;
 
 import android.widget.SeekBar;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.core.ToolBar;
 import com.qioq.android.lib.video.core.listener.OnGestureSeekListener;

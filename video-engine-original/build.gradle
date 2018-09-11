@@ -11,4 +11,3 @@ dependencies {
 }
 
 apply from: '../config/upload.gradle'
-

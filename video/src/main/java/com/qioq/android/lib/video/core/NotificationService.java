@@ -2,10 +2,10 @@ package com.qioq.android.lib.video.core;
 
 import android.util.Log;
 import android.view.MotionEvent;
-import com.qioq.android.artemis.piece.PluginApplication;
-import com.qioq.android.artemis.piece.core.Plugin;
-import com.qioq.android.artemis.piece.core.PluginManager;
-import com.qioq.android.artemis.piece.core.PluginServices;
+import com.andcup.android.frame.plugin.PluginApplication;
+import com.andcup.android.frame.plugin.core.Plugin;
+import com.andcup.android.frame.plugin.core.PluginManager;
+import com.andcup.android.frame.plugin.core.PluginServices;
 import com.qioq.android.lib.video.core.listener.*;
 import com.qioq.android.lib.video.core.model.Subtitle;
 import com.qioq.android.lib.video.core.model.Video;

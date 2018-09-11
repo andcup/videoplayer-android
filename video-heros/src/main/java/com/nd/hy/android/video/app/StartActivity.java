@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import com.qioq.android.artemis.piece.PluginApplication;
+import com.andcup.android.frame.plugin.PluginApplication;
 import com.qioq.android.lib.video.ContentProvider;
 import com.qioq.android.lib.video.VideoConfiguration;
 import com.qioq.android.lib.video.VideoPlayer;
@@ -89,9 +89,9 @@ public class StartActivity extends FragmentActivity implements View.OnClickListe
                         List<Video> videos = new ArrayList<Video>();
 
                         Video video = new Video();
-                        video.setVideoUrl("http://192.168.10.4/test.mp4");
+                        video.setVideoUrl("http://www.qioq.com/swf/demo.flv");
                         video.setVideoId("test video");
-                        video.setTitle("http://192.168.10.4/test.mp4");
+                        video.setTitle("http://www.qioq.com/swf/demo.flv");
                         video.setQuality(Quality.Smooth);
                         videos.add(video);
                         onDocLoadingListener.onContentLoadingComplete(videos);

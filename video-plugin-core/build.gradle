@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply from: '../config/android.gradle'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile rootProject.ext.libs.supportV4
+//    compile rootProject.ext.libs.appCompat
+    compile 'com.android.support:appcompat-v7:25.0.0'
+}
+
+group = 'com.qioq.video.plugin.core'
+version = rootProject.ext.pluginVersion
+

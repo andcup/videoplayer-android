@@ -9,9 +9,9 @@ import com.qioq.android.lib.video.core.listener.OnVolumeListener;
 import com.qioq.android.lib.video.core.model.Video;
 import com.qioq.android.lib.video.engine.core.IVideoController;
 import com.qioq.android.lib.video.engine.model.VideoState;
-import com.qioq.android.artemis.piece.core.Plugin;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.Plugin;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 
 import java.lang.ref.SoftReference;
 import java.util.List;

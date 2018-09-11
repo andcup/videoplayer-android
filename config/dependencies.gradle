@@ -39,10 +39,11 @@ allprojects {
         espressoVersion = '2.0'
         testingSupportLibVersion = '0.1'
 
-        videoVersion     = '1.0.5-SNAPSHOT'
-        frescoVersion    = "0.5.0"
-        blurVersion      = "1.0.0"
-        artemisVersion   = "1.0.1-SNAPSHOT"
+        videoVersion = '1.0.5-SNAPSHOT'
+        frescoVersion = "0.5.0"
+        blurVersion = "1.0.0"
+        artemisVersion = "1.0.1-SNAPSHOT"
+        pluginVersion = '1.0.0-SNAPSHOT'
 
         // 为了兼容maven项目依赖本组件，在aar库后面添加@aar保证maven项目使用组件时能取到对应依赖库
         libs = [
@@ -65,6 +66,7 @@ allprojects {
                 parceler           : "org.parceler:parceler-api:${parcelerVersion}",
                 fresco             : "com.facebook.fresco:fresco:${frescoVersion}",
                 blur               : "jp.wasabeef:blurry:${blurVersion}@aar",
+                plugin             : "com.qioq.video.plugin.core:${pluginVersion}@aar",
                 piece              : "com.qioq.android.artemis.piece:artemis-piece:${artemisVersion}@aar"
         ]
 

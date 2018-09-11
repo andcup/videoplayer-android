@@ -1,7 +1,7 @@
 package com.qioq.android.lib.video.plugins.loading;
 
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.qioq.android.lib.video.core.listener.OnVideoTryListener;
 import com.qioq.android.lib.video.core.model.Video;
 import com.qioq.android.lib.video.engine.model.VideoState;

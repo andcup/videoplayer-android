@@ -1,7 +1,7 @@
 package com.qioq.android.lib.video.core.indicators;
 
-import com.qioq.android.artemis.piece.core.Plugin;
-import com.qioq.android.artemis.piece.core.indicator.AbsIndicator;
+import com.andcup.android.frame.plugin.core.Plugin;
+import com.andcup.android.frame.plugin.core.indicator.AbsIndicator;
 import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.VideoPlugin;
 

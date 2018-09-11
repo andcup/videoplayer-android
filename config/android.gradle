@@ -1,6 +1,9 @@
 //apply plugin: 'me.tatarka.retrolambda'
 
 android {
+
+    useLibrary 'org.apache.http.legacy'
+
     def conf = parent.ext;
     compileSdkVersion conf.androidCompileSdkVersion
     buildToolsVersion conf.androidBuildToolsVersion
@@ -14,6 +17,11 @@ android {
 
         renderscriptTargetApi 22
         renderscriptSupportModeEnabled true
+
+        //使用VLC引擎时，开启该功能。
+        ndk {
+            abiFilters "armeabi-v7a", "armeabi"
+        }
     }
 
     compileOptions {

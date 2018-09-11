@@ -1,9 +1,9 @@
 package com.qioq.android.lib.video.plugins.entry;
 
 import android.view.ViewGroup;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.Mode;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.Mode;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.core.listener.OnFullScreenListener;
 import com.qioq.android.lib.video.engine.widget.VideoView;

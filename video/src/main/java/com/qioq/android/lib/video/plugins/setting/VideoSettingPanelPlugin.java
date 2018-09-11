@@ -2,8 +2,8 @@ package com.qioq.android.lib.video.plugins.setting;
 
 import android.view.View;
 import android.widget.ImageButton;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.engine.model.VideoState;
 import com.qioq.android.lib.video.VideoPlugin;

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.andcup.com"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="plugins" >
+        <xs:complexType >
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <!--父插件配置-->
+                <xs:element name="include" maxOccurs="1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="plugin.path"    use="required"/>
+                        <xs:attribute name="plugin.enable"  use="required" default="true" type="type.boolean"/>
+                    </xs:complexType>
+                </xs:element>
+                <!--插件配置-->
+                <xs:element name="plugin" maxOccurs="unbounded"  minOccurs="0" >
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                            <xs:element name="expand">
+                                <xs:complexType>
+                                    <xs:attribute name="id.expand"      type="type.id"      use="required" default="@+id/" />
+                                    <xs:attribute name="id.plugin"      type="type.id"      use="required" default="@+id/" />
+                                    <xs:attribute name="plugin.enable"  type="type.boolean" use="optional" default="true"/>
+                                    <xs:attribute name="plugin.visible" type="type.boolean" use="optional" default="true"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice >
+                        <xs:attribute name="plugin.entry"   type="type.boolean"   use="optional" default="false"/>
+                        <xs:attribute name="plugin.class"   type="xs:string"      use="required" />
+                        <xs:attribute name="plugin.new"     type="type.condition" use="optional" default="normal"/>
+                        <xs:attribute name="plugin.enable"  type="type.boolean"   use="optional" default="false" />
+                        <xs:attribute name="plugin.id"      type="type.id"        use="required" default="@+id/"/>
+                        <xs:attribute name="plugin.layout"  type="type.layout"    use="optional" default="@layout/"/>
+                        <xs:attribute name="plugin.style"   type="type.style"     use="optional" default="@style/" />
+                        <xs:attribute name="plugin.visible" type="type.boolean"   use="optional" default="true"/>
+                        <xs:attribute name="plugin.displayIndicator" type="xs:string"   use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+                <!--对话框插件配置-->
+                <xs:element name="dialog" maxOccurs="unbounded"  minOccurs="0">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                            <xs:element name="expand">
+                                <xs:complexType>
+                                    <xs:attribute name="id.expand" type="type.id" use="required" default="@+id/" />
+                                    <xs:attribute name="id.plugin" type="type.id" use="required" default="@+id/" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice >
+                        <xs:attribute name="plugin.id"      type="type.id"        use="required" default="@+id/"/>
+                        <xs:attribute name="plugin.layout"  type="type.layout"    use="optional" default="@layout/"/>
+                        <xs:attribute name="plugin.style"   type="type.style"     use="optional" default="@style/" />
+                        <xs:attribute name="plugin.visible" type="type.boolean"   use="optional" default="false"/>
+                        <xs:attribute name="plugin.class"   type="xs:string"      use="required" />
+                        <xs:attribute name="plugin.new"     type="type.condition" use="optional" default="normal"/>
+                        <xs:attribute name="plugin.enable"  type="type.boolean"   use="optional" default="false" />
+                        <xs:attribute name="plugin.modal"   type="type.boolean"   use="optional" default="false" />
+                        <xs:attribute name="plugin.gravity" type="type.gravity"   use="optional" default="center"/>
+                        <xs:attribute name="plugin.width"   type="type.size"      use="optional" default="wrap_content"/>
+                        <xs:attribute name="plugin.height"  type="type.size"      use="optional" default="wrap_content"/>
+                        <xs:attribute name="plugin.displayIndicator" type="xs:string"   use="optional"/>
+                        <xs:attribute name="plugin.relativeTo" type="type.relative"     use="optional" default="context"/>
+                        <xs:attribute name="plugin.autoStart" type="type.boolean"     use="optional" default="false"/>
+                        <xs:attribute name="plugin.left" type="type.size"     use="optional"/>
+                        <xs:attribute name="plugin.top"  type="type.size"     use="optional"/>
+                        <xs:attribute name="plugin.dimEnable" type="type.boolean" use="optional" default="false"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="type.id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.layout">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.style">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.condition">
+        <xs:union memberTypes="condition.list"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="condition.list">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="size"/>
+            <xs:enumeration value="orientation"/>
+            <xs:enumeration value="normal"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.boolean">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="type.size">
+        <xs:union memberTypes="size.list size.dp"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.gravity">
+        <xs:list itemType="gravity.list"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="gravity.list">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="left"/>
+            <xs:enumeration value="top"/>
+            <xs:enumeration value="right"/>
+            <xs:enumeration value="bottom"/>
+            <xs:enumeration value="center"/>
+            <xs:enumeration value="center_horizontal"/>
+            <xs:enumeration value="center_vertical"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="size.list">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="wrap_content"/>
+            <xs:enumeration value="match_parent"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="size.dp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="^[0-9]*dp$"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="type.relative">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="window"/>
+            <xs:enumeration value="context"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

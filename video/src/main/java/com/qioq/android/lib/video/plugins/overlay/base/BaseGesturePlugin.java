@@ -1,8 +1,8 @@
 package com.qioq.android.lib.video.plugins.overlay.base;
 
 import android.view.MotionEvent;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.qioq.android.lib.video.core.listener.OnGestureListener;
 import com.qioq.android.lib.video.VideoPlugin;
 

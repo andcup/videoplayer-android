@@ -3,8 +3,8 @@ package com.qioq.android.lib.video.plugins.loading;
 import android.graphics.drawable.AnimationDrawable;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.tools.RateConvert;
 
@@ -29,7 +29,7 @@ public class VideoLoadingPlugin extends BaseLoadingPlugin {
         mTvLoading  = findViewById(R.id.tv_loading);
         mTvUserGuide = findViewById(R.id.tv_guide);
         formatRate(0.0f);
-        mIvLoading.setBackgroundResource(R.anim.video_loading);
+        mIvLoading.setBackgroundResource(R.drawable.video_loading);
         AnimationDrawable drawable = (AnimationDrawable) mIvLoading.getBackground();
         drawable.start();
     }

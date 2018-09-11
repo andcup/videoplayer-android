@@ -1,17 +1,6 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.1'
-    }
-}
+
 apply plugin: 'com.android.application'
 apply from: '../config/android.gradle'
-
-repositories {
-    jcenter()
-}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -19,5 +8,5 @@ dependencies {
 
     compile project(':video')
 
-    compile project(':video-engine-original')
+    compile project(':video-engine-vlc')
 }

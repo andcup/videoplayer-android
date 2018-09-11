@@ -12,10 +12,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
 
     compile project(':video-engine')
+    compile project(':video-plugin-core')
     def libs = parent.ext.libs
     compile libs.fresco
     compile libs.blur
-    compile libs.piece
 }
 
 apply from: '../config/upload.gradle'

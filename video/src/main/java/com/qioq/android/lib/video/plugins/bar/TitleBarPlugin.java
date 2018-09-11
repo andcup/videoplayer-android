@@ -7,8 +7,8 @@ import com.nd.hy.android.video.R;
 import com.qioq.android.lib.video.core.listener.OnToolBarListener;
 import com.qioq.android.lib.video.engine.model.VideoState;
 import com.qioq.android.lib.video.VideoPlugin;
-import com.qioq.android.artemis.piece.core.PluginContext;
-import com.qioq.android.artemis.piece.core.model.PluginEntry;
+import com.andcup.android.frame.plugin.core.PluginContext;
+import com.andcup.android.frame.plugin.core.model.PluginEntry;
 
 /**
  * Created by Amos on 2015/7/7.

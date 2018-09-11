@@ -12,5 +12,4 @@ dependencies {
     compile project(':video-engine')
 }
 
-apply from: '../config/upload.gradle'
 
